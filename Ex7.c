@@ -4,7 +4,7 @@ int main()
 {
 const int a=20;
 int tab[a][a];
-int i,c,l,j,s;
+int r,i,c,l,j,s;
 s=0;
 printf("Saisie le nombre des lignes");
 scanf("%d",&l);
@@ -14,21 +14,20 @@ for (i=0;i<l;i++)
 {
 for (j=0;j<c;j++)
 {
-printf("Saisie T[%d,%d]",i,j)
-scanf("%d",&tab[i][j])	
+printf("Saisie m[%d,%d]",i,j);
+scanf("%d",&tab[i][j]);
 s=s+tab[i][j];
 }
 	}
-for (i=0;i<n;i++)
+for (i=0;i<l;i++)
 	{
-for (j=0;j<m;j++)
+for (j=0;j<c;j++)
 {
 printf("\n %d",tab[i][j]);
 }
 }
-r=s/(n*m)
-printf("\nLa moyenne des entiers de tableau= %d",r);
+r=s/(c*l);
+printf("\n moyenne %d",r);
 printf("\n");
-printf("\nLa somme des entiers de tableau= %d",s);
+printf("\n somme %d",s);
 return 0;
-}
